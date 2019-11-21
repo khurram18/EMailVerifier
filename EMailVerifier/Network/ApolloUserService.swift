@@ -24,7 +24,7 @@ extension ApolloUserService: UserService {
     
     func registerUser(email: String, password: String) -> Observable<Bool> {
         
-        return Observable<Bool>.create { observer in
+        Observable<Bool>.create { observer in
             self.apolloClient.perform(mutation: UserRegistrationMutation(email: email, password: password)) { result in
                 switch result {
                 case .success(let response):
@@ -48,7 +48,7 @@ extension ApolloUserService: UserService {
     
     func verifyUser(email: String, token: String) -> Observable<Bool> {
         
-        return Observable<Bool>.create { observer in
+        Observable<Bool>.create { observer in
             
             self.apolloClient.perform(mutation: UserVerifyEmailMutation(email: email, token: token)) { result in
                 switch result {
@@ -70,8 +70,4 @@ extension ApolloUserService: UserService {
             return Disposables.create()
         }
     }
-}
-
-struct GraphQLError: Error {
-    let message: String
 }

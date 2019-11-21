@@ -12,6 +12,8 @@
 		9F7DE345C5172D4761975465 /* Pods_EMailVerifierTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCDC2B95F995595F2E095380 /* Pods_EMailVerifierTests.framework */; };
 		A122E472238707BB0095880D /* UIStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A122E471238707BB0095880D /* UIStoryboard.swift */; };
 		A122E474238718200095880D /* UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A122E473238718200095880D /* UINavigationController.swift */; };
+		A122E476238721A40095880D /* GraphQLError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A122E475238721A40095880D /* GraphQLError.swift */; };
+		A122E477238721A40095880D /* GraphQLError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A122E475238721A40095880D /* GraphQLError.swift */; };
 		A166BBF22386814E00DF3046 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A166BBF12386814E00DF3046 /* AppDelegate.swift */; };
 		A166BBF42386814E00DF3046 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A166BBF32386814E00DF3046 /* SceneDelegate.swift */; };
 		A166BBF62386814E00DF3046 /* UserRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A166BBF52386814E00DF3046 /* UserRegistrationViewController.swift */; };
@@ -62,6 +64,7 @@
 		9CF84BFA602FA82DF917226A /* Pods-EMailVerifier-EMailVerifierUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EMailVerifier-EMailVerifierUITests.debug.xcconfig"; path = "Target Support Files/Pods-EMailVerifier-EMailVerifierUITests/Pods-EMailVerifier-EMailVerifierUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A122E471238707BB0095880D /* UIStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStoryboard.swift; sourceTree = "<group>"; };
 		A122E473238718200095880D /* UINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationController.swift; sourceTree = "<group>"; };
+		A122E475238721A40095880D /* GraphQLError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQLError.swift; sourceTree = "<group>"; };
 		A166BBEE2386814E00DF3046 /* EMailVerifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EMailVerifier.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A166BBF12386814E00DF3046 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A166BBF32386814E00DF3046 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -193,8 +196,9 @@
 			isa = PBXGroup;
 			children = (
 				A1A97491238692D9007EDDC5 /* API.swift */,
-				A1A974942386936C007EDDC5 /* UserService.swift */,
 				A1A9749723869803007EDDC5 /* ApolloUserService.swift */,
+				A122E475238721A40095880D /* GraphQLError.swift */,
+				A1A974942386936C007EDDC5 /* UserService.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -514,6 +518,7 @@
 				A166BBF22386814E00DF3046 /* AppDelegate.swift in Sources */,
 				A1A9749823869803007EDDC5 /* ApolloUserService.swift in Sources */,
 				A1A974A12386B16F007EDDC5 /* UserVerifyViewController.swift in Sources */,
+				A122E476238721A40095880D /* GraphQLError.swift in Sources */,
 				A1A9749E2386B0F7007EDDC5 /* UserVerifyViewModel.swift in Sources */,
 				A1A97492238692D9007EDDC5 /* API.swift in Sources */,
 				A122E474238718200095880D /* UINavigationController.swift in Sources */,
@@ -530,6 +535,7 @@
 				A1A974A22386B16F007EDDC5 /* UserVerifyViewController.swift in Sources */,
 				A1A9749C2386A12E007EDDC5 /* UserRegistrationViewModel.swift in Sources */,
 				A1A97493238692DF007EDDC5 /* API.swift in Sources */,
+				A122E477238721A40095880D /* GraphQLError.swift in Sources */,
 				A1A9749923869803007EDDC5 /* ApolloUserService.swift in Sources */,
 				A166BC092386814F00DF3046 /* EMailVerifierTests.swift in Sources */,
 				A1A974A52386B241007EDDC5 /* String.swift in Sources */,
