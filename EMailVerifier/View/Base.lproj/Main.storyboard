@@ -36,6 +36,7 @@
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="at" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="zsi-XD-BO8">
                                         <rect key="frame" x="0.0" y="0.0" width="34" height="34"/>
+                                        <color key="tintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="34" id="QfW-eZ-0oV"/>
                                             <constraint firstAttribute="width" constant="34" id="qiw-OB-JMW"/>
@@ -67,6 +68,7 @@
                                     </textField>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lock" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="bxH-Of-gOo">
                                         <rect key="frame" x="0.0" y="0.0" width="34" height="34"/>
+                                        <color key="tintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="34" id="3HI-zX-wI0"/>
                                             <constraint firstAttribute="height" constant="35.5" id="Vy0-CL-gxw"/>
@@ -95,6 +97,7 @@
                                     <constraint firstAttribute="height" constant="20" id="jV7-B9-erQ"/>
                                     <constraint firstAttribute="width" constant="20" id="sYr-hF-zyZ"/>
                                 </constraints>
+                                <color key="color" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </activityIndicatorView>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Mm-ul-yiN">
                                 <rect key="frame" x="132" y="460" width="150" height="30"/>
@@ -152,6 +155,7 @@
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textformat.abc" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="2kk-NM-G6o">
                                         <rect key="frame" x="0.0" y="0.0" width="34" height="34"/>
+                                        <color key="tintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="34" id="IHp-g6-pIA"/>
                                             <constraint firstAttribute="height" constant="39.5" id="RVA-Wq-JMY"/>
@@ -185,6 +189,7 @@
                                     <constraint firstAttribute="width" constant="20" id="dNr-WD-gh3"/>
                                     <constraint firstAttribute="height" constant="20" id="r8B-ep-ov5"/>
                                 </constraints>
+                                <color key="color" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </activityIndicatorView>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XCc-NG-Npj">
                                 <rect key="frame" x="132" y="438" width="150" height="30"/>
