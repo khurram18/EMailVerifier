@@ -24,11 +24,10 @@ final class UserRegistrationViewModel {
 
     var showLoading : PublishSubject<Bool> = PublishSubject()
     
-    weak var delegate: UserRegistrationViewModelDelegate?
+    private weak var delegate: UserRegistrationViewModelDelegate?
     
     private let userService: UserService
     private let disposeBag = DisposeBag()
-    
     private let throttleIntervalInMilliseconds = 500
     
     private var emailValue = ""
@@ -49,6 +48,7 @@ final class UserRegistrationViewModel {
         } else {
             hasError.onNext(true)
             errorMessage.onNext("Please enter a valid email address")
+            return
         }
         
         if passwordValue.isValidPassword {
@@ -57,6 +57,7 @@ final class UserRegistrationViewModel {
         } else {
             hasError.onNext(true)
             errorMessage.onNext("Password length must be at least 8 characters")
+            return
         }
         
         performUserRegistration()
@@ -113,7 +114,8 @@ final class UserRegistrationViewModel {
             },
                        onError: { error in
                         self.hasError.onNext(true)
-                        self.errorMessage.onNext("An error occurred")
+                        let message = (error as? GraphQLError)?.message ?? "An error occurred"
+                        self.errorMessage.onNext(message)
             })
         .disposed(by: disposeBag)
     }

@@ -26,6 +26,11 @@ class UserRegistrationViewController: UIViewController {
         // Do any additional setup after loading the view.
         setupBindings()
         setupObservers()
+        
+        // Since we are in dev mode we do not need content type. For a production app we will have to use the cotent type
+        // to .newPassword or .password
+        // https://developer.apple.com/documentation/security/password_autofill/setting_up_an_app_s_associated_domains
+        passwordTextField.textContentType = .none
     }
     
     private func setupBindings() {
@@ -80,7 +85,7 @@ class UserRegistrationViewController: UIViewController {
             .map{!$0}
             .map { enabled in
                 if enabled {
-                    return UIColor.blue
+                    return UIColor.systemBlue
                 } else {
                     return UIColor.lightGray
                 }

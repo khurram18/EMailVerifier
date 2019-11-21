@@ -14,10 +14,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
 
     private let apolloUserService = ApolloUserService(apolloClient: ApolloClient(url: URL(string: "http://graphql.dev.rtw.team/query")!))
+    
+    private var navigationController: UINavigationController? {
+        return window?.rootViewController as? UINavigationController
+    }
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         
-        guard let viewController = window?.rootViewController as? UserRegistrationViewController else { return }
+        guard let navigationConntroller = navigationController,
+            let viewController = navigationConntroller.viewControllers.first as? UserRegistrationViewController else { return }
         
         viewController.viewModel = UserRegistrationViewModel(userService: apolloUserService, delegate: self)
     }
@@ -55,9 +60,17 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 extension SceneDelegate : UserRegistrationViewModelDelegate {
     func didFinishUserRegistration(with email: String) {
-        guard let viewController = UIStoryboard.init(name: "Mai", bundle: nil).instantiateViewController(identifier: "UserVerify") as? UserVerifyViewController else { return }
+        let viewController = UIStoryboard.main.instantiateUserVerifyViewController()
         let viewModel = UserVerifyViewModel(email: email, userService: apolloUserService)
         viewController.viewModel = viewModel
-        window?.rootViewController = viewController
+        navigationController?.pushViewController(viewController, animated: true)
+    }
+}
+
+extension SceneDelegate: UINavigationControllerDelegate {
+    func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
+        if viewController is UserVerifyViewController {
+            navigationController.viewControllers.remove(at: 0)
+        }
     }
 }

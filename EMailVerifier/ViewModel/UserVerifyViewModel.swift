@@ -5,39 +5,73 @@
 //  Created by Khurram Shehzad on 21/11/2019.
 //
 
+import RxSwift
+
 import Foundation
 
+protocol UserVerifyViewModelDelegate : class {
+    func didFinishUserVerification()
+}
+
 final class UserVerifyViewModel : ObservableObject {
+
+    // UI will update these
+    var token : PublishSubject<String> = PublishSubject()
     
-//    @Published var email: String = ""
-//    @Published var token: String = ""
-//
-//    @Published var verified = false
-//    @Published var showLoading = false
-//
-//    @Published var showError = false
-//    @Published var errorMessage = ""
+    // UI will subscribe to these
+    var hasError : PublishSubject<Bool> = PublishSubject()
+    var errorMessage : PublishSubject<String> = PublishSubject()
+
+    var showLoading : PublishSubject<Bool> = PublishSubject()
     
     private let userService: UserService
-//    private var disposables = Set<AnyCancellable>()
+    private let email: String
+    private let disposeBag = DisposeBag()
+    private let throttleIntervalInMilliseconds = 500
+    
+    private var tokenValue = ""
     
     init(email: String, userService: UserService) {
-//        self.email = email
+        self.email = email
         self.userService = userService
+        initValues()
+        setupObservers()
     }
     
     func onVerifyButtonTap() {
-//        if token.isEmpty {
-//            showError = true
-//            errorMessage = "Token cannot be empty"
-//            return
-//        }
-//        showError = false
-//        errorMessage = ""
-        performEmailVerificatio()
+        if tokenValue.isEmpty {
+            hasError.onNext(true)
+            errorMessage.onNext("Please enter token")
+        } else {
+            hasError.onNext(false)
+            errorMessage.onNext("")
+            return
+        }
+        performEmailVerification()
     }
-    private func performEmailVerificatio() {
-//        showLoading = true
+    private func setupObservers() {
+        token.asObserver()
+            .throttle(.milliseconds(throttleIntervalInMilliseconds), scheduler: MainScheduler.instance)
+            .subscribe(onNext: {value in
+                if value.isEmpty {
+                    self.tokenValue = ""
+                    self.hasError.onNext(true)
+                    self.errorMessage.onNext("Please enter token")
+                } else {
+                    self.tokenValue = value
+                    self.hasError.onNext(false)
+                    self.errorMessage.onNext("")
+                }
+        }, onError: nil, onCompleted: nil, onDisposed: nil)
+        .disposed(by: disposeBag)
+    }
+    private func initValues() {
+        hasError.onNext(false)
+        errorMessage.onNext("")
+        showLoading.onNext(false)
+    }
+    private func performEmailVerification() {
+        
 //        userService.verifyUser(email: email, token: token)
 //            .receive(on: DispatchQueue.main)
 //            .sink(
