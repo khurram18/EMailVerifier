@@ -7,6 +7,7 @@ target 'EMailVerifier' do
 
   # Pods for EMailVerifier
   pod 'Apollo'
+  pod 'RxSwift', '~> 5'
   pod 'ReactiveCocoa', '~> 9.0'
 
   target 'EMailVerifierTests' do

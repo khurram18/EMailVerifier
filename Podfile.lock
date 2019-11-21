@@ -7,10 +7,12 @@ PODS:
   - ReactiveSwift (5.0.1):
     - Result (~> 4.1)
   - Result (4.1.0)
+  - RxSwift (5.0.1)
 
 DEPENDENCIES:
   - Apollo
   - ReactiveCocoa (~> 9.0)
+  - RxSwift (~> 5)
 
 SPEC REPOS:
   trunk:
@@ -18,13 +20,15 @@ SPEC REPOS:
     - ReactiveCocoa
     - ReactiveSwift
     - Result
+    - RxSwift
 
 SPEC CHECKSUMS:
   Apollo: 46b40c7023c1d49f2220a0364cdff8829674d9d3
   ReactiveCocoa: 29709cf0cc7502ddd04a51220e10ee0336d8bec8
   ReactiveSwift: cac20a5bbe560c5806bd29c0fccf90d03b996ac1
   Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
+  RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
 
-PODFILE CHECKSUM: a955d59b4e59d172564f52ca7abec927f9e53b40
+PODFILE CHECKSUM: e56cf5fc54c751a1674ae3798fe72581d687a0f7
 
 COCOAPODS: 1.8.4
