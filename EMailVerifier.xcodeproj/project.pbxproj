@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		041D036FC25F9C5CF3B4C5DF /* Pods_EMailVerifier.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABFC93CBB7D86107818B411 /* Pods_EMailVerifier.framework */; };
+		8A55722CFFCD4F989DCC1556 /* Pods_EMailVerifier_EMailVerifierUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78BF392F02C6077D3DBA2112 /* Pods_EMailVerifier_EMailVerifierUITests.framework */; };
+		9F7DE345C5172D4761975465 /* Pods_EMailVerifierTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCDC2B95F995595F2E095380 /* Pods_EMailVerifierTests.framework */; };
 		A166BBF22386814E00DF3046 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A166BBF12386814E00DF3046 /* AppDelegate.swift */; };
 		A166BBF42386814E00DF3046 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A166BBF32386814E00DF3046 /* SceneDelegate.swift */; };
 		A166BBF62386814E00DF3046 /* UserRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A166BBF52386814E00DF3046 /* UserRegistrationViewController.swift */; };
@@ -15,6 +18,8 @@
 		A166BBFE2386814F00DF3046 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A166BBFC2386814F00DF3046 /* LaunchScreen.storyboard */; };
 		A166BC092386814F00DF3046 /* EMailVerifierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A166BC082386814F00DF3046 /* EMailVerifierTests.swift */; };
 		A166BC142386814F00DF3046 /* EMailVerifierUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A166BC132386814F00DF3046 /* EMailVerifierUITests.swift */; };
+		A1A97492238692D9007EDDC5 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A97491238692D9007EDDC5 /* API.swift */; };
+		A1A97493238692DF007EDDC5 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A97491238692D9007EDDC5 /* API.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		29C3AC9C89046A6F777859D7 /* Pods-EMailVerifier-EMailVerifierUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EMailVerifier-EMailVerifierUITests.release.xcconfig"; path = "Target Support Files/Pods-EMailVerifier-EMailVerifierUITests/Pods-EMailVerifier-EMailVerifierUITests.release.xcconfig"; sourceTree = "<group>"; };
+		57A15482ED7652E6B21ADD41 /* Pods-EMailVerifier.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EMailVerifier.debug.xcconfig"; path = "Target Support Files/Pods-EMailVerifier/Pods-EMailVerifier.debug.xcconfig"; sourceTree = "<group>"; };
+		58D03621D86515183CA57BD8 /* Pods-EMailVerifierTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EMailVerifierTests.debug.xcconfig"; path = "Target Support Files/Pods-EMailVerifierTests/Pods-EMailVerifierTests.debug.xcconfig"; sourceTree = "<group>"; };
+		78BF392F02C6077D3DBA2112 /* Pods_EMailVerifier_EMailVerifierUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EMailVerifier_EMailVerifierUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7ABFC93CBB7D86107818B411 /* Pods_EMailVerifier.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EMailVerifier.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CF84BFA602FA82DF917226A /* Pods-EMailVerifier-EMailVerifierUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EMailVerifier-EMailVerifierUITests.debug.xcconfig"; path = "Target Support Files/Pods-EMailVerifier-EMailVerifierUITests/Pods-EMailVerifier-EMailVerifierUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A166BBEE2386814E00DF3046 /* EMailVerifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EMailVerifier.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A166BBF12386814E00DF3046 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A166BBF32386814E00DF3046 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +60,10 @@
 		A166BC0F2386814F00DF3046 /* EMailVerifierUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EMailVerifierUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A166BC132386814F00DF3046 /* EMailVerifierUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EMailVerifierUITests.swift; sourceTree = "<group>"; };
 		A166BC152386814F00DF3046 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1A97491238692D9007EDDC5 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		A440EFFD24E7E3106A4A2FED /* Pods-EMailVerifierTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EMailVerifierTests.release.xcconfig"; path = "Target Support Files/Pods-EMailVerifierTests/Pods-EMailVerifierTests.release.xcconfig"; sourceTree = "<group>"; };
+		ACF6824C98FE3A95D0BF09AF /* Pods-EMailVerifier.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EMailVerifier.release.xcconfig"; path = "Target Support Files/Pods-EMailVerifier/Pods-EMailVerifier.release.xcconfig"; sourceTree = "<group>"; };
+		CCDC2B95F995595F2E095380 /* Pods_EMailVerifierTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EMailVerifierTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				041D036FC25F9C5CF3B4C5DF /* Pods_EMailVerifier.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F7DE345C5172D4761975465 /* Pods_EMailVerifierTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A55722CFFCD4F989DCC1556 /* Pods_EMailVerifier_EMailVerifierUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +101,8 @@
 				A166BC072386814F00DF3046 /* EMailVerifierTests */,
 				A166BC122386814F00DF3046 /* EMailVerifierUITests */,
 				A166BBEF2386814E00DF3046 /* Products */,
+				B0BA986EB592EA6CFE6F0BC0 /* Pods */,
+				EDFA6D57B2758AB0D467481C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -149,6 +169,7 @@
 		A17AF6B92386821800FC9FA5 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				A1A97491238692D9007EDDC5 /* API.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -176,6 +197,29 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		B0BA986EB592EA6CFE6F0BC0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				57A15482ED7652E6B21ADD41 /* Pods-EMailVerifier.debug.xcconfig */,
+				ACF6824C98FE3A95D0BF09AF /* Pods-EMailVerifier.release.xcconfig */,
+				9CF84BFA602FA82DF917226A /* Pods-EMailVerifier-EMailVerifierUITests.debug.xcconfig */,
+				29C3AC9C89046A6F777859D7 /* Pods-EMailVerifier-EMailVerifierUITests.release.xcconfig */,
+				58D03621D86515183CA57BD8 /* Pods-EMailVerifierTests.debug.xcconfig */,
+				A440EFFD24E7E3106A4A2FED /* Pods-EMailVerifierTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EDFA6D57B2758AB0D467481C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7ABFC93CBB7D86107818B411 /* Pods_EMailVerifier.framework */,
+				78BF392F02C6077D3DBA2112 /* Pods_EMailVerifier_EMailVerifierUITests.framework */,
+				CCDC2B95F995595F2E095380 /* Pods_EMailVerifierTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -183,9 +227,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A166BC182386814F00DF3046 /* Build configuration list for PBXNativeTarget "EMailVerifier" */;
 			buildPhases = (
+				0BE5260CEDCBC604726EE37F /* [CP] Check Pods Manifest.lock */,
+				A1A97490238691C4007EDDC5 /* Generate Apollo GraphQL API */,
 				A166BBEA2386814E00DF3046 /* Sources */,
 				A166BBEB2386814E00DF3046 /* Frameworks */,
 				A166BBEC2386814E00DF3046 /* Resources */,
+				FF6DF97F775E31B24CCFDEEA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -200,6 +247,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A166BC1B2386814F00DF3046 /* Build configuration list for PBXNativeTarget "EMailVerifierTests" */;
 			buildPhases = (
+				5E633772AB1FC5C88E12C263 /* [CP] Check Pods Manifest.lock */,
 				A166BC002386814F00DF3046 /* Sources */,
 				A166BC012386814F00DF3046 /* Frameworks */,
 				A166BC022386814F00DF3046 /* Resources */,
@@ -218,9 +266,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A166BC1E2386814F00DF3046 /* Build configuration list for PBXNativeTarget "EMailVerifierUITests" */;
 			buildPhases = (
+				C933AF04329D93F704165DF7 /* [CP] Check Pods Manifest.lock */,
 				A166BC0B2386814F00DF3046 /* Sources */,
 				A166BC0C2386814F00DF3046 /* Frameworks */,
 				A166BC0D2386814F00DF3046 /* Resources */,
+				19FE5815C5788B914A7E1C9B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -301,6 +351,127 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0BE5260CEDCBC604726EE37F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EMailVerifier-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		19FE5815C5788B914A7E1C9B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EMailVerifier-EMailVerifierUITests/Pods-EMailVerifier-EMailVerifierUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EMailVerifier-EMailVerifierUITests/Pods-EMailVerifier-EMailVerifierUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EMailVerifier-EMailVerifierUITests/Pods-EMailVerifier-EMailVerifierUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E633772AB1FC5C88E12C263 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EMailVerifierTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1A97490238691C4007EDDC5 /* Generate Apollo GraphQL API */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Apollo GraphQL API";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\nSCRIPT_PATH=\"${PODS_ROOT}/Apollo/scripts\"\ncd \"${SRCROOT}/${TARGET_NAME}\"\npwd \n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh codegen:generate --target=swift --includes=./**/*.graphql --localSchemaFile=\"schema.json\" Network/API.swift\n";
+		};
+		C933AF04329D93F704165DF7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EMailVerifier-EMailVerifierUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF6DF97F775E31B24CCFDEEA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EMailVerifier/Pods-EMailVerifier-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EMailVerifier/Pods-EMailVerifier-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EMailVerifier/Pods-EMailVerifier-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A166BBEA2386814E00DF3046 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -308,6 +479,7 @@
 			files = (
 				A166BBF62386814E00DF3046 /* UserRegistrationViewController.swift in Sources */,
 				A166BBF22386814E00DF3046 /* AppDelegate.swift in Sources */,
+				A1A97492238692D9007EDDC5 /* API.swift in Sources */,
 				A166BBF42386814E00DF3046 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -316,6 +488,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1A97493238692DF007EDDC5 /* API.swift in Sources */,
 				A166BC092386814F00DF3046 /* EMailVerifierTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -479,6 +652,7 @@
 		};
 		A166BC192386814F00DF3046 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57A15482ED7652E6B21ADD41 /* Pods-EMailVerifier.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -496,6 +670,7 @@
 		};
 		A166BC1A2386814F00DF3046 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACF6824C98FE3A95D0BF09AF /* Pods-EMailVerifier.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -513,6 +688,7 @@
 		};
 		A166BC1C2386814F00DF3046 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58D03621D86515183CA57BD8 /* Pods-EMailVerifierTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -534,6 +710,7 @@
 		};
 		A166BC1D2386814F00DF3046 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A440EFFD24E7E3106A4A2FED /* Pods-EMailVerifierTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -555,6 +732,7 @@
 		};
 		A166BC1F2386814F00DF3046 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CF84BFA602FA82DF917226A /* Pods-EMailVerifier-EMailVerifierUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -574,6 +752,7 @@
 		};
 		A166BC202386814F00DF3046 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29C3AC9C89046A6F777859D7 /* Pods-EMailVerifier-EMailVerifierUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

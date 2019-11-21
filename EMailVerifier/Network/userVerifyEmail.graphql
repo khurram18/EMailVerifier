@@ -1,0 +1,6 @@
+mutation UserVerifyEmail($email: String!, $token: String!) {
+	userVerifyEmail(email: $email, token:$token) {
+		status
+		message
+	}
+}

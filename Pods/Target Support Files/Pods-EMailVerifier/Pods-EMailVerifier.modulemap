@@ -1,0 +1,6 @@
+framework module Pods_EMailVerifier {
+  umbrella header "Pods-EMailVerifier-umbrella.h"
+
+  export *
+  module * { export * }
+}
