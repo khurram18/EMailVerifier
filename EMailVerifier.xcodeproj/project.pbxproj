@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A166BBF22386814E00DF3046 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A166BBF12386814E00DF3046 /* AppDelegate.swift */; };
+		A166BBF42386814E00DF3046 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A166BBF32386814E00DF3046 /* SceneDelegate.swift */; };
+		A166BBF62386814E00DF3046 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A166BBF52386814E00DF3046 /* ViewController.swift */; };
+		A166BBF92386814E00DF3046 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A166BBF72386814E00DF3046 /* Main.storyboard */; };
+		A166BBFB2386814F00DF3046 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A166BBFA2386814F00DF3046 /* Assets.xcassets */; };
+		A166BBFE2386814F00DF3046 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A166BBFC2386814F00DF3046 /* LaunchScreen.storyboard */; };
+		A166BC092386814F00DF3046 /* EMailVerifierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A166BC082386814F00DF3046 /* EMailVerifierTests.swift */; };
+		A166BC142386814F00DF3046 /* EMailVerifierUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A166BC132386814F00DF3046 /* EMailVerifierUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A166BC052386814F00DF3046 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A166BBE62386814E00DF3046 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A166BBED2386814E00DF3046;
+			remoteInfo = EMailVerifier;
+		};
+		A166BC102386814F00DF3046 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A166BBE62386814E00DF3046 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A166BBED2386814E00DF3046;
+			remoteInfo = EMailVerifier;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A166BBEE2386814E00DF3046 /* EMailVerifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EMailVerifier.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A166BBF12386814E00DF3046 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A166BBF32386814E00DF3046 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A166BBF52386814E00DF3046 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A166BBF82386814E00DF3046 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A166BBFA2386814F00DF3046 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A166BBFD2386814F00DF3046 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A166BBFF2386814F00DF3046 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A166BC042386814F00DF3046 /* EMailVerifierTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EMailVerifierTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A166BC082386814F00DF3046 /* EMailVerifierTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EMailVerifierTests.swift; sourceTree = "<group>"; };
+		A166BC0A2386814F00DF3046 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A166BC0F2386814F00DF3046 /* EMailVerifierUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EMailVerifierUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A166BC132386814F00DF3046 /* EMailVerifierUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EMailVerifierUITests.swift; sourceTree = "<group>"; };
+		A166BC152386814F00DF3046 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A166BBEB2386814E00DF3046 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A166BC012386814F00DF3046 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A166BC0C2386814F00DF3046 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A166BBE52386814E00DF3046 = {
+			isa = PBXGroup;
+			children = (
+				A166BBF02386814E00DF3046 /* EMailVerifier */,
+				A166BC072386814F00DF3046 /* EMailVerifierTests */,
+				A166BC122386814F00DF3046 /* EMailVerifierUITests */,
+				A166BBEF2386814E00DF3046 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A166BBEF2386814E00DF3046 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A166BBEE2386814E00DF3046 /* EMailVerifier.app */,
+				A166BC042386814F00DF3046 /* EMailVerifierTests.xctest */,
+				A166BC0F2386814F00DF3046 /* EMailVerifierUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A166BBF02386814E00DF3046 /* EMailVerifier */ = {
+			isa = PBXGroup;
+			children = (
+				A166BBF12386814E00DF3046 /* AppDelegate.swift */,
+				A166BBF32386814E00DF3046 /* SceneDelegate.swift */,
+				A166BBF52386814E00DF3046 /* ViewController.swift */,
+				A166BBF72386814E00DF3046 /* Main.storyboard */,
+				A166BBFA2386814F00DF3046 /* Assets.xcassets */,
+				A166BBFC2386814F00DF3046 /* LaunchScreen.storyboard */,
+				A166BBFF2386814F00DF3046 /* Info.plist */,
+			);
+			path = EMailVerifier;
+			sourceTree = "<group>";
+		};
+		A166BC072386814F00DF3046 /* EMailVerifierTests */ = {
+			isa = PBXGroup;
+			children = (
+				A166BC082386814F00DF3046 /* EMailVerifierTests.swift */,
+				A166BC0A2386814F00DF3046 /* Info.plist */,
+			);
+			path = EMailVerifierTests;
+			sourceTree = "<group>";
+		};
+		A166BC122386814F00DF3046 /* EMailVerifierUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A166BC132386814F00DF3046 /* EMailVerifierUITests.swift */,
+				A166BC152386814F00DF3046 /* Info.plist */,
+			);
+			path = EMailVerifierUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A166BBED2386814E00DF3046 /* EMailVerifier */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A166BC182386814F00DF3046 /* Build configuration list for PBXNativeTarget "EMailVerifier" */;
+			buildPhases = (
+				A166BBEA2386814E00DF3046 /* Sources */,
+				A166BBEB2386814E00DF3046 /* Frameworks */,
+				A166BBEC2386814E00DF3046 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EMailVerifier;
+			productName = EMailVerifier;
+			productReference = A166BBEE2386814E00DF3046 /* EMailVerifier.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A166BC032386814F00DF3046 /* EMailVerifierTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A166BC1B2386814F00DF3046 /* Build configuration list for PBXNativeTarget "EMailVerifierTests" */;
+			buildPhases = (
+				A166BC002386814F00DF3046 /* Sources */,
+				A166BC012386814F00DF3046 /* Frameworks */,
+				A166BC022386814F00DF3046 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A166BC062386814F00DF3046 /* PBXTargetDependency */,
+			);
+			name = EMailVerifierTests;
+			productName = EMailVerifierTests;
+			productReference = A166BC042386814F00DF3046 /* EMailVerifierTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A166BC0E2386814F00DF3046 /* EMailVerifierUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A166BC1E2386814F00DF3046 /* Build configuration list for PBXNativeTarget "EMailVerifierUITests" */;
+			buildPhases = (
+				A166BC0B2386814F00DF3046 /* Sources */,
+				A166BC0C2386814F00DF3046 /* Frameworks */,
+				A166BC0D2386814F00DF3046 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A166BC112386814F00DF3046 /* PBXTargetDependency */,
+			);
+			name = EMailVerifierUITests;
+			productName = EMailVerifierUITests;
+			productReference = A166BC0F2386814F00DF3046 /* EMailVerifierUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A166BBE62386814E00DF3046 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				TargetAttributes = {
+					A166BBED2386814E00DF3046 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					A166BC032386814F00DF3046 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = A166BBED2386814E00DF3046;
+					};
+					A166BC0E2386814F00DF3046 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = A166BBED2386814E00DF3046;
+					};
+				};
+			};
+			buildConfigurationList = A166BBE92386814E00DF3046 /* Build configuration list for PBXProject "EMailVerifier" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A166BBE52386814E00DF3046;
+			productRefGroup = A166BBEF2386814E00DF3046 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A166BBED2386814E00DF3046 /* EMailVerifier */,
+				A166BC032386814F00DF3046 /* EMailVerifierTests */,
+				A166BC0E2386814F00DF3046 /* EMailVerifierUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A166BBEC2386814E00DF3046 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A166BBFE2386814F00DF3046 /* LaunchScreen.storyboard in Resources */,
+				A166BBFB2386814F00DF3046 /* Assets.xcassets in Resources */,
+				A166BBF92386814E00DF3046 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A166BC022386814F00DF3046 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A166BC0D2386814F00DF3046 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A166BBEA2386814E00DF3046 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A166BBF62386814E00DF3046 /* ViewController.swift in Sources */,
+				A166BBF22386814E00DF3046 /* AppDelegate.swift in Sources */,
+				A166BBF42386814E00DF3046 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A166BC002386814F00DF3046 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A166BC092386814F00DF3046 /* EMailVerifierTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A166BC0B2386814F00DF3046 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A166BC142386814F00DF3046 /* EMailVerifierUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A166BC062386814F00DF3046 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A166BBED2386814E00DF3046 /* EMailVerifier */;
+			targetProxy = A166BC052386814F00DF3046 /* PBXContainerItemProxy */;
+		};
+		A166BC112386814F00DF3046 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A166BBED2386814E00DF3046 /* EMailVerifier */;
+			targetProxy = A166BC102386814F00DF3046 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A166BBF72386814E00DF3046 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A166BBF82386814E00DF3046 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A166BBFC2386814F00DF3046 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A166BBFD2386814F00DF3046 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A166BC162386814F00DF3046 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A166BC172386814F00DF3046 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A166BC192386814F00DF3046 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EMailVerifier/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.EMailVerifier;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A166BC1A2386814F00DF3046 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EMailVerifier/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.EMailVerifier;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A166BC1C2386814F00DF3046 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EMailVerifierTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.EMailVerifierTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EMailVerifier.app/EMailVerifier";
+			};
+			name = Debug;
+		};
+		A166BC1D2386814F00DF3046 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EMailVerifierTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.EMailVerifierTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EMailVerifier.app/EMailVerifier";
+			};
+			name = Release;
+		};
+		A166BC1F2386814F00DF3046 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EMailVerifierUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.EMailVerifierUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EMailVerifier;
+			};
+			name = Debug;
+		};
+		A166BC202386814F00DF3046 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EMailVerifierUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.EMailVerifierUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EMailVerifier;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A166BBE92386814E00DF3046 /* Build configuration list for PBXProject "EMailVerifier" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A166BC162386814F00DF3046 /* Debug */,
+				A166BC172386814F00DF3046 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A166BC182386814F00DF3046 /* Build configuration list for PBXNativeTarget "EMailVerifier" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A166BC192386814F00DF3046 /* Debug */,
+				A166BC1A2386814F00DF3046 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A166BC1B2386814F00DF3046 /* Build configuration list for PBXNativeTarget "EMailVerifierTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A166BC1C2386814F00DF3046 /* Debug */,
+				A166BC1D2386814F00DF3046 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A166BC1E2386814F00DF3046 /* Build configuration list for PBXNativeTarget "EMailVerifierUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A166BC1F2386814F00DF3046 /* Debug */,
+				A166BC202386814F00DF3046 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A166BBE62386814E00DF3046 /* Project object */;
+}
