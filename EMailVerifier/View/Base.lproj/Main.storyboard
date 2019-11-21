@@ -228,6 +228,30 @@
             </objects>
             <point key="canvasLocation" x="138" y="804"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="vMJ-r6-fuV">
+            <objects>
+                <viewController storyboardIdentifier="UserVerified" id="eZz-nJ-2tJ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RnU-ts-Q6M">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your account has been successfully verified" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6LJ-LF-nGI">
+                                <rect key="frame" x="40" y="438" width="335" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="vig-jc-nrm"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GpO-ni-VQY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="1484"/>
+        </scene>
     </scenes>
     <resources>
         <image name="at" catalog="system" width="64" height="62"/>

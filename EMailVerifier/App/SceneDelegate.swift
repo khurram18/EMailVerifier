@@ -63,15 +63,20 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 extension SceneDelegate : UserRegistrationViewModelDelegate {
     func didFinishUserRegistration(with email: String) {
         let viewController = UIStoryboard.main.instantiateUserVerifyViewController()
-        let viewModel = UserVerifyViewModel(email: email, userService: apolloUserService)
+        let viewModel = UserVerifyViewModel(email: email, userService: apolloUserService, delegate: self)
         viewController.viewModel = viewModel
         navigationController?.pushViewController(viewController, animated: true)
     }
 }
 
+extension SceneDelegate: UserVerifyViewModelDelegate {
+    func didFinishUserVerification() {
+        navigationController?.pushViewController(UIStoryboard.main.instantiateUserVerifiedViewController(), animated: true)
+    }
+}
 extension SceneDelegate: UINavigationControllerDelegate {
     func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
-        if viewController is UserVerifyViewController {
+        if viewController is UserVerifyViewController || navigationController.viewControllers.first is UserVerifyViewController {
             navigationController.removeViewController(at: 0, animated: false)
         }
     }

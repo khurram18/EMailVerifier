@@ -14,4 +14,8 @@ extension UIStoryboard {
     func instantiateUserVerifyViewController() -> UserVerifyViewController {
         instantiateViewController(identifier: "UserVerify") as! UserVerifyViewController
     }
+    
+    func instantiateUserVerifiedViewController() -> UIViewController {
+        instantiateViewController(identifier: "UserVerified")
+    }
 }

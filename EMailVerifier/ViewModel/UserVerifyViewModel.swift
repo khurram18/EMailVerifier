@@ -31,9 +31,12 @@ final class UserVerifyViewModel : ObservableObject {
     
     private var tokenValue = ""
     
-    init(email: String, userService: UserService) {
+    private weak var delegate: UserVerifyViewModelDelegate?
+    
+    init(email: String, userService: UserService, delegate: UserVerifyViewModelDelegate?) {
         self.email = email
         self.userService = userService
+        self.delegate = delegate
         initValues()
         setupObservers()
     }
@@ -42,10 +45,10 @@ final class UserVerifyViewModel : ObservableObject {
         if tokenValue.isEmpty {
             hasError.onNext(true)
             errorMessage.onNext("Please enter token")
+            return
         } else {
             hasError.onNext(false)
             errorMessage.onNext("")
-            return
         }
         performEmailVerification()
     }
@@ -72,20 +75,27 @@ final class UserVerifyViewModel : ObservableObject {
     }
     private func performEmailVerification() {
         
-//        userService.verifyUser(email: email, token: token)
-//            .receive(on: DispatchQueue.main)
-//            .sink(
-//            receiveCompletion: { [weak self] value in
-//                guard let self = self else { return }
-//                switch (value) {
-//                case .failure(let error):
-//                    print(error)
-//                    self.showError = true
-//                    self.errorMessage = "An error occurred"
-//                case .finished:
-//                    self.verified = true
-//                }
-//                }, receiveValue: { _ in })
-//            .store(in: &disposables)
+        showLoading.onNext(true)
+        userService.verifyUser(email: email, token: tokenValue)
+            .observeOn(MainScheduler.instance)
+            .subscribe(onNext: { success in
+                if success {
+                    self.showLoading.onNext(false)
+                    self.hasError.onNext(false)
+                    self.errorMessage.onNext("")
+                    self.didFinishUserVerification()
+                }
+            },
+                       onError: { error in
+                        self.showLoading.onNext(false)
+                        self.hasError.onNext(true)
+                        let message = (error as? GraphQLError)?.message ?? "An error occurred"
+                        self.errorMessage.onNext(message)
+            })
+            .disposed(by: disposeBag)
+    }
+    
+    private func didFinishUserVerification() {
+        delegate?.didFinishUserVerification()
     }
 }
