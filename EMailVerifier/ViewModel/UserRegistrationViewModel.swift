@@ -66,34 +66,16 @@ final class UserRegistrationViewModel {
         email.asObserver()
             .throttle(.milliseconds(throttleIntervalInMilliseconds), scheduler: MainScheduler.instance)
             .subscribe(onNext: {value in
-                if value.isValidEmail {
-                    self.emailValue = value
-                    self.hasError.onNext(false)
-                    self.errorMessage.onNext("")
-                } else {
-                    self.emailValue = ""
-                    self.hasError.onNext(true)
-                    self.errorMessage.onNext("Please enter a valid email address")
-                }
+                self.emailValue = value
         }, onError: nil, onCompleted: nil, onDisposed: nil)
         .disposed(by: disposeBag)
         
         password.asObserver()
             .throttle(.milliseconds(throttleIntervalInMilliseconds), scheduler: MainScheduler.instance)
             .subscribe(onNext: {value in
-                if value.isValidPassword {
-                    self.passwordValue = value
-                    self.hasError.onNext(false)
-                    self.errorMessage.onNext("")
-                } else {
-                    self.passwordValue = ""
-                    self.hasError.onNext(true)
-                    self.errorMessage.onNext("Password length must be at least 8 characters")
-                }
+                self.passwordValue = value
         }, onError: nil, onCompleted: nil, onDisposed: nil)
         .disposed(by: disposeBag)
-        
-        
     }
     private func initValues() {
         hasError.onNext(false)

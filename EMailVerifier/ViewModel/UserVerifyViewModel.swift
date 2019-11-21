@@ -56,15 +56,7 @@ final class UserVerifyViewModel : ObservableObject {
         token.asObserver()
             .throttle(.milliseconds(throttleIntervalInMilliseconds), scheduler: MainScheduler.instance)
             .subscribe(onNext: {value in
-                if value.isEmpty {
-                    self.tokenValue = ""
-                    self.hasError.onNext(true)
-                    self.errorMessage.onNext("Please enter token")
-                } else {
-                    self.tokenValue = value
-                    self.hasError.onNext(false)
-                    self.errorMessage.onNext("")
-                }
+                self.tokenValue = value
         }, onError: nil, onCompleted: nil, onDisposed: nil)
         .disposed(by: disposeBag)
     }

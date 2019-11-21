@@ -73,27 +73,6 @@ class UserRegistrationViewController: UIViewController {
             .bind(to: activityIndicator.rx.isAnimating)
             .disposed(by: disposeBag)
         
-        viewModel.hasError
-            .asObserver()
-            .map{!$0}
-            .observeOn(MainScheduler.instance)
-            .bind(to: registerButton.rx.isEnabled)
-            .disposed(by: disposeBag)
-        
-        viewModel.hasError
-            .asObserver()
-            .map{!$0}
-            .map { enabled in
-                if enabled {
-                    return UIColor.systemBlue
-                } else {
-                    return UIColor.lightGray
-                }
-            }
-            .observeOn(MainScheduler.instance)
-            .bind(to: registerButton.rx.backgroundColor)
-            .disposed(by: disposeBag)
-        
         registerButton.rx
             .tap
             .subscribe(onNext: {

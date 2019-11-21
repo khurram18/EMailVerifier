@@ -66,27 +66,6 @@ class UserVerifyViewController: UIViewController {
             .bind(to: activityIndicator.rx.isAnimating)
             .disposed(by: disposeBag)
         
-        viewModel.hasError
-            .asObserver()
-            .map{!$0}
-            .observeOn(MainScheduler.instance)
-            .bind(to: verifyButton.rx.isEnabled)
-            .disposed(by: disposeBag)
-        
-        viewModel.hasError
-            .asObserver()
-            .map{!$0}
-            .map { enabled in
-                if enabled {
-                    return UIColor.systemBlue
-                } else {
-                    return UIColor.lightGray
-                }
-            }
-            .observeOn(MainScheduler.instance)
-            .bind(to: verifyButton.rx.backgroundColor)
-            .disposed(by: disposeBag)
-        
         verifyButton.rx
             .tap
             .subscribe(onNext: {
