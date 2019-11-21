@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		A166BBF22386814E00DF3046 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A166BBF12386814E00DF3046 /* AppDelegate.swift */; };
 		A166BBF42386814E00DF3046 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A166BBF32386814E00DF3046 /* SceneDelegate.swift */; };
-		A166BBF62386814E00DF3046 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A166BBF52386814E00DF3046 /* ViewController.swift */; };
+		A166BBF62386814E00DF3046 /* UserRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A166BBF52386814E00DF3046 /* UserRegistrationViewController.swift */; };
 		A166BBF92386814E00DF3046 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A166BBF72386814E00DF3046 /* Main.storyboard */; };
 		A166BBFB2386814F00DF3046 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A166BBFA2386814F00DF3046 /* Assets.xcassets */; };
 		A166BBFE2386814F00DF3046 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A166BBFC2386814F00DF3046 /* LaunchScreen.storyboard */; };
@@ -38,7 +38,7 @@
 		A166BBEE2386814E00DF3046 /* EMailVerifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EMailVerifier.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A166BBF12386814E00DF3046 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A166BBF32386814E00DF3046 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A166BBF52386814E00DF3046 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A166BBF52386814E00DF3046 /* UserRegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegistrationViewController.swift; sourceTree = "<group>"; };
 		A166BBF82386814E00DF3046 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A166BBFA2386814F00DF3046 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A166BBFD2386814F00DF3046 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -99,13 +99,16 @@
 		A166BBF02386814E00DF3046 /* EMailVerifier */ = {
 			isa = PBXGroup;
 			children = (
-				A166BBF12386814E00DF3046 /* AppDelegate.swift */,
-				A166BBF32386814E00DF3046 /* SceneDelegate.swift */,
-				A166BBF52386814E00DF3046 /* ViewController.swift */,
-				A166BBF72386814E00DF3046 /* Main.storyboard */,
+				A17AF6B7238681F200FC9FA5 /* App */,
+				A17AF6BB2386823F00FC9FA5 /* Extesions */,
+				A17AF6B92386821800FC9FA5 /* Network */,
+				A17AF6BC2386826700FC9FA5 /* View */,
+				A17AF6B8238681F900FC9FA5 /* ViewControllers */,
+				A17AF6BA2386822E00FC9FA5 /* ViewModel */,
 				A166BBFA2386814F00DF3046 /* Assets.xcassets */,
-				A166BBFC2386814F00DF3046 /* LaunchScreen.storyboard */,
 				A166BBFF2386814F00DF3046 /* Info.plist */,
+				A166BBFC2386814F00DF3046 /* LaunchScreen.storyboard */,
+				A166BBF72386814E00DF3046 /* Main.storyboard */,
 			);
 			path = EMailVerifier;
 			sourceTree = "<group>";
@@ -126,6 +129,51 @@
 				A166BC152386814F00DF3046 /* Info.plist */,
 			);
 			path = EMailVerifierUITests;
+			sourceTree = "<group>";
+		};
+		A17AF6B7238681F200FC9FA5 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A166BBF12386814E00DF3046 /* AppDelegate.swift */,
+				A166BBF32386814E00DF3046 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A17AF6B8238681F900FC9FA5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A166BBF52386814E00DF3046 /* UserRegistrationViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A17AF6B92386821800FC9FA5 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A17AF6BA2386822E00FC9FA5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A17AF6BB2386823F00FC9FA5 /* Extesions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extesions;
+			sourceTree = "<group>";
+		};
+		A17AF6BC2386826700FC9FA5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +306,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A166BBF62386814E00DF3046 /* ViewController.swift in Sources */,
+				A166BBF62386814E00DF3046 /* UserRegistrationViewController.swift in Sources */,
 				A166BBF22386814E00DF3046 /* AppDelegate.swift in Sources */,
 				A166BBF42386814E00DF3046 /* SceneDelegate.swift in Sources */,
 			);
