@@ -8,7 +8,7 @@ target 'EMailVerifier' do
   # Pods for EMailVerifier
   pod 'Apollo'
   pod 'RxSwift', '~> 5'
-  pod 'ReactiveCocoa', '~> 9.0'
+  pod 'RxCocoa', '~> 5'
 
   target 'EMailVerifierTests' do
     inherit! :search_paths

@@ -26,6 +26,12 @@
 		A1A9749923869803007EDDC5 /* ApolloUserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A9749723869803007EDDC5 /* ApolloUserService.swift */; };
 		A1A9749B2386A12D007EDDC5 /* UserRegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A9749A2386A12D007EDDC5 /* UserRegistrationViewModel.swift */; };
 		A1A9749C2386A12E007EDDC5 /* UserRegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A9749A2386A12D007EDDC5 /* UserRegistrationViewModel.swift */; };
+		A1A9749E2386B0F7007EDDC5 /* UserVerifyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A9749D2386B0F7007EDDC5 /* UserVerifyViewModel.swift */; };
+		A1A9749F2386B0F7007EDDC5 /* UserVerifyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A9749D2386B0F7007EDDC5 /* UserVerifyViewModel.swift */; };
+		A1A974A12386B16F007EDDC5 /* UserVerifyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A974A02386B16F007EDDC5 /* UserVerifyViewController.swift */; };
+		A1A974A22386B16F007EDDC5 /* UserVerifyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A974A02386B16F007EDDC5 /* UserVerifyViewController.swift */; };
+		A1A974A42386B241007EDDC5 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A974A32386B241007EDDC5 /* String.swift */; };
+		A1A974A52386B241007EDDC5 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A974A32386B241007EDDC5 /* String.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +76,9 @@
 		A1A974942386936C007EDDC5 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		A1A9749723869803007EDDC5 /* ApolloUserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloUserService.swift; sourceTree = "<group>"; };
 		A1A9749A2386A12D007EDDC5 /* UserRegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegistrationViewModel.swift; sourceTree = "<group>"; };
+		A1A9749D2386B0F7007EDDC5 /* UserVerifyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserVerifyViewModel.swift; sourceTree = "<group>"; };
+		A1A974A02386B16F007EDDC5 /* UserVerifyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserVerifyViewController.swift; sourceTree = "<group>"; };
+		A1A974A32386B241007EDDC5 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		A440EFFD24E7E3106A4A2FED /* Pods-EMailVerifierTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EMailVerifierTests.release.xcconfig"; path = "Target Support Files/Pods-EMailVerifierTests/Pods-EMailVerifierTests.release.xcconfig"; sourceTree = "<group>"; };
 		ACF6824C98FE3A95D0BF09AF /* Pods-EMailVerifier.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EMailVerifier.release.xcconfig"; path = "Target Support Files/Pods-EMailVerifier/Pods-EMailVerifier.release.xcconfig"; sourceTree = "<group>"; };
 		CCDC2B95F995595F2E095380 /* Pods_EMailVerifierTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EMailVerifierTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -171,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				A166BBF52386814E00DF3046 /* UserRegistrationViewController.swift */,
+				A1A974A02386B16F007EDDC5 /* UserVerifyViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -189,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				A1A9749A2386A12D007EDDC5 /* UserRegistrationViewModel.swift */,
+				A1A9749D2386B0F7007EDDC5 /* UserVerifyViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -196,6 +207,7 @@
 		A17AF6BB2386823F00FC9FA5 /* Extesions */ = {
 			isa = PBXGroup;
 			children = (
+				A1A974A32386B241007EDDC5 /* String.swift */,
 			);
 			path = Extesions;
 			sourceTree = "<group>";
@@ -491,8 +503,11 @@
 			files = (
 				A166BBF62386814E00DF3046 /* UserRegistrationViewController.swift in Sources */,
 				A1A974952386936C007EDDC5 /* UserService.swift in Sources */,
+				A1A974A42386B241007EDDC5 /* String.swift in Sources */,
 				A166BBF22386814E00DF3046 /* AppDelegate.swift in Sources */,
 				A1A9749823869803007EDDC5 /* ApolloUserService.swift in Sources */,
+				A1A974A12386B16F007EDDC5 /* UserVerifyViewController.swift in Sources */,
+				A1A9749E2386B0F7007EDDC5 /* UserVerifyViewModel.swift in Sources */,
 				A1A97492238692D9007EDDC5 /* API.swift in Sources */,
 				A1A9749B2386A12D007EDDC5 /* UserRegistrationViewModel.swift in Sources */,
 				A166BBF42386814E00DF3046 /* SceneDelegate.swift in Sources */,
@@ -503,10 +518,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1A9749F2386B0F7007EDDC5 /* UserVerifyViewModel.swift in Sources */,
+				A1A974A22386B16F007EDDC5 /* UserVerifyViewController.swift in Sources */,
 				A1A9749C2386A12E007EDDC5 /* UserRegistrationViewModel.swift in Sources */,
 				A1A97493238692DF007EDDC5 /* API.swift in Sources */,
 				A1A9749923869803007EDDC5 /* ApolloUserService.swift in Sources */,
 				A166BC092386814F00DF3046 /* EMailVerifierTests.swift in Sources */,
+				A1A974A52386B241007EDDC5 /* String.swift in Sources */,
 				A1A974962386936C007EDDC5 /* UserService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

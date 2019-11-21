@@ -2,33 +2,31 @@ PODS:
   - Apollo (0.20.0):
     - Apollo/Core (= 0.20.0)
   - Apollo/Core (0.20.0)
-  - ReactiveCocoa (9.0.0):
-    - ReactiveSwift (~> 5.0)
-  - ReactiveSwift (5.0.1):
-    - Result (~> 4.1)
-  - Result (4.1.0)
+  - RxCocoa (5.0.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.0.1):
+    - RxSwift (~> 5)
   - RxSwift (5.0.1)
 
 DEPENDENCIES:
   - Apollo
-  - ReactiveCocoa (~> 9.0)
+  - RxCocoa (~> 5)
   - RxSwift (~> 5)
 
 SPEC REPOS:
   trunk:
     - Apollo
-    - ReactiveCocoa
-    - ReactiveSwift
-    - Result
+    - RxCocoa
+    - RxRelay
     - RxSwift
 
 SPEC CHECKSUMS:
   Apollo: 46b40c7023c1d49f2220a0364cdff8829674d9d3
-  ReactiveCocoa: 29709cf0cc7502ddd04a51220e10ee0336d8bec8
-  ReactiveSwift: cac20a5bbe560c5806bd29c0fccf90d03b996ac1
-  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
+  RxCocoa: e741b9749968e8a143e2b787f1dfbff2b63d0a5c
+  RxRelay: 89d54507f4fd4d969e6ec1d4bd7f3673640b4640
   RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
 
-PODFILE CHECKSUM: e56cf5fc54c751a1674ae3798fe72581d687a0f7
+PODFILE CHECKSUM: 42a421f2cdf888355d1ea8cb10e2872aeb308f5d
 
 COCOAPODS: 1.8.4

@@ -5,6 +5,7 @@
 //  Created by Khurram Shehzad on 21/11/2019.
 //
 
+import RxSwift
 import Foundation
 
 protocol UserRegistrationViewModelDelegate : class {
@@ -13,11 +14,111 @@ protocol UserRegistrationViewModelDelegate : class {
 
 final class UserRegistrationViewModel {
     
-    private weak var delegate: UserRegistrationViewModelDelegate?
+    // UI will update these
+    var email : PublishSubject<String> = PublishSubject()
+    var password: PublishSubject<String> = PublishSubject()
+    
+    // UI will subscribe to these
+    var hasError : PublishSubject<Bool> = PublishSubject()
+    var errorMessage : PublishSubject<String> = PublishSubject()
+
+    var showLoading : PublishSubject<Bool> = PublishSubject()
+    
+    weak var delegate: UserRegistrationViewModelDelegate?
     
     private let userService: UserService
+    private let disposeBag = DisposeBag()
+    
+    private let throttleIntervalInMilliseconds = 500
+    
+    private var emailValue = ""
+    private var passwordValue = ""
+    
     init(userService: UserService, delegate: UserRegistrationViewModelDelegate? = nil) {
         self.userService = userService
         self.delegate = delegate
+        initValues()
+        setupObservers()
+    }
+    
+    func onRegisterButtonTap() {
+        
+        if emailValue.isValidEmail {
+            hasError.onNext(false)
+            errorMessage.onNext("")
+        } else {
+            hasError.onNext(true)
+            errorMessage.onNext("Please enter a valid email address")
+        }
+        
+        if passwordValue.isValidPassword {
+            hasError.onNext(false)
+            errorMessage.onNext("")
+        } else {
+            hasError.onNext(true)
+            errorMessage.onNext("Password length must be at least 8 characters")
+        }
+        
+        performUserRegistration()
+    }
+    private func setupObservers() {
+        email.asObserver()
+            .throttle(.milliseconds(throttleIntervalInMilliseconds), scheduler: MainScheduler.instance)
+            .subscribe(onNext: {value in
+                if value.isValidEmail {
+                    self.emailValue = value
+                    self.hasError.onNext(false)
+                    self.errorMessage.onNext("")
+                } else {
+                    self.emailValue = ""
+                    self.hasError.onNext(true)
+                    self.errorMessage.onNext("Please enter a valid email address")
+                }
+        }, onError: nil, onCompleted: nil, onDisposed: nil)
+        .disposed(by: disposeBag)
+        
+        password.asObserver()
+            .throttle(.milliseconds(throttleIntervalInMilliseconds), scheduler: MainScheduler.instance)
+            .subscribe(onNext: {value in
+                if value.isValidPassword {
+                    self.passwordValue = value
+                    self.hasError.onNext(false)
+                    self.errorMessage.onNext("")
+                } else {
+                    self.passwordValue = ""
+                    self.hasError.onNext(true)
+                    self.errorMessage.onNext("Password length must be at least 8 characters")
+                }
+        }, onError: nil, onCompleted: nil, onDisposed: nil)
+        .disposed(by: disposeBag)
+        
+        
+    }
+    private func initValues() {
+        hasError.onNext(false)
+        errorMessage.onNext("")
+        showLoading.onNext(false)
+    }
+    private func performUserRegistration() {
+        showLoading.onNext(true)
+        userService.registerUser(email: emailValue, password: passwordValue)
+            .observeOn(MainScheduler.instance)
+            .subscribe(onNext: { success in
+                if success {
+                    self.showLoading.onNext(false)
+                    self.hasError.onNext(false)
+                    self.errorMessage.onNext("")
+                    self.didFinishUserRegistration()
+                }
+            },
+                       onError: { error in
+                        self.hasError.onNext(true)
+                        self.errorMessage.onNext("An error occurred")
+            })
+        .disposed(by: disposeBag)
+    }
+    
+    private func didFinishUserRegistration() {
+        delegate?.didFinishUserRegistration(with: emailValue)
     }
 }

@@ -16,10 +16,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     private let apolloUserService = ApolloUserService(apolloClient: ApolloClient(url: URL(string: "http://graphql.dev.rtw.team/query")!))
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
+        
+        guard let viewController = window?.rootViewController as? UserRegistrationViewController else { return }
+        
+        viewController.viewModel = UserRegistrationViewModel(userService: apolloUserService, delegate: self)
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -53,3 +53,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 }
 
+extension SceneDelegate : UserRegistrationViewModelDelegate {
+    func didFinishUserRegistration(with email: String) {
+        guard let viewController = UIStoryboard.init(name: "Mai", bundle: nil).instantiateViewController(identifier: "UserVerify") as? UserVerifyViewController else { return }
+        let viewModel = UserVerifyViewModel(email: email, userService: apolloUserService)
+        viewController.viewModel = viewModel
+        window?.rootViewController = viewController
+    }
+}
