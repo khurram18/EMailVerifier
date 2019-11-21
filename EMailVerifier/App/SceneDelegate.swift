@@ -24,6 +24,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let navigationConntroller = navigationController,
             let viewController = navigationConntroller.viewControllers.first as? UserRegistrationViewController else { return }
         
+        navigationConntroller.delegate = self
+        
         viewController.viewModel = UserRegistrationViewModel(userService: apolloUserService, delegate: self)
     }
 
@@ -70,7 +72,7 @@ extension SceneDelegate : UserRegistrationViewModelDelegate {
 extension SceneDelegate: UINavigationControllerDelegate {
     func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
         if viewController is UserVerifyViewController {
-            navigationController.viewControllers.remove(at: 0)
+            navigationController.removeViewController(at: 0, animated: false)
         }
     }
 }

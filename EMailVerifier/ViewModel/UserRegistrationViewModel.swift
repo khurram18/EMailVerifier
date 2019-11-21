@@ -113,6 +113,7 @@ final class UserRegistrationViewModel {
                 }
             },
                        onError: { error in
+                        self.showLoading.onNext(false)
                         self.hasError.onNext(true)
                         let message = (error as? GraphQLError)?.message ?? "An error occurred"
                         self.errorMessage.onNext(message)

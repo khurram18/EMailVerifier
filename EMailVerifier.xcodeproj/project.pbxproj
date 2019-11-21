@@ -11,6 +11,7 @@
 		8A55722CFFCD4F989DCC1556 /* Pods_EMailVerifier_EMailVerifierUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78BF392F02C6077D3DBA2112 /* Pods_EMailVerifier_EMailVerifierUITests.framework */; };
 		9F7DE345C5172D4761975465 /* Pods_EMailVerifierTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCDC2B95F995595F2E095380 /* Pods_EMailVerifierTests.framework */; };
 		A122E472238707BB0095880D /* UIStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A122E471238707BB0095880D /* UIStoryboard.swift */; };
+		A122E474238718200095880D /* UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A122E473238718200095880D /* UINavigationController.swift */; };
 		A166BBF22386814E00DF3046 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A166BBF12386814E00DF3046 /* AppDelegate.swift */; };
 		A166BBF42386814E00DF3046 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A166BBF32386814E00DF3046 /* SceneDelegate.swift */; };
 		A166BBF62386814E00DF3046 /* UserRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A166BBF52386814E00DF3046 /* UserRegistrationViewController.swift */; };
@@ -60,6 +61,7 @@
 		7ABFC93CBB7D86107818B411 /* Pods_EMailVerifier.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EMailVerifier.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CF84BFA602FA82DF917226A /* Pods-EMailVerifier-EMailVerifierUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EMailVerifier-EMailVerifierUITests.debug.xcconfig"; path = "Target Support Files/Pods-EMailVerifier-EMailVerifierUITests/Pods-EMailVerifier-EMailVerifierUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A122E471238707BB0095880D /* UIStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStoryboard.swift; sourceTree = "<group>"; };
+		A122E473238718200095880D /* UINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationController.swift; sourceTree = "<group>"; };
 		A166BBEE2386814E00DF3046 /* EMailVerifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EMailVerifier.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A166BBF12386814E00DF3046 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A166BBF32386814E00DF3046 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -210,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				A1A974A32386B241007EDDC5 /* String.swift */,
+				A122E473238718200095880D /* UINavigationController.swift */,
 				A122E471238707BB0095880D /* UIStoryboard.swift */,
 			);
 			path = Extesions;
@@ -513,6 +516,7 @@
 				A1A974A12386B16F007EDDC5 /* UserVerifyViewController.swift in Sources */,
 				A1A9749E2386B0F7007EDDC5 /* UserVerifyViewModel.swift in Sources */,
 				A1A97492238692D9007EDDC5 /* API.swift in Sources */,
+				A122E474238718200095880D /* UINavigationController.swift in Sources */,
 				A1A9749B2386A12D007EDDC5 /* UserRegistrationViewModel.swift in Sources */,
 				A166BBF42386814E00DF3046 /* SceneDelegate.swift in Sources */,
 			);
