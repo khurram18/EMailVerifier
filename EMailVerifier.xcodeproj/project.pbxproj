@@ -107,8 +107,6 @@
 				A17AF6BA2386822E00FC9FA5 /* ViewModel */,
 				A166BBFA2386814F00DF3046 /* Assets.xcassets */,
 				A166BBFF2386814F00DF3046 /* Info.plist */,
-				A166BBFC2386814F00DF3046 /* LaunchScreen.storyboard */,
-				A166BBF72386814E00DF3046 /* Main.storyboard */,
 			);
 			path = EMailVerifier;
 			sourceTree = "<group>";
@@ -172,6 +170,8 @@
 		A17AF6BC2386826700FC9FA5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A166BBFC2386814F00DF3046 /* LaunchScreen.storyboard */,
+				A166BBF72386814E00DF3046 /* Main.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
