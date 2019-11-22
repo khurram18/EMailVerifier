@@ -9,10 +9,6 @@ import RxSwift
 
 import Foundation
 
-protocol UserVerifyViewModelDelegate : class {
-    func didFinishUserVerification()
-}
-
 final class UserVerifyViewModel : ObservableObject {
 
     // UI will update these
@@ -23,6 +19,11 @@ final class UserVerifyViewModel : ObservableObject {
     var errorMessage : PublishSubject<String> = PublishSubject()
 
     var showLoading : PublishSubject<Bool> = PublishSubject()
+    var didFinishUserVerification: Observable<Void> {
+        return finish.asObserver()
+    }
+    
+    private var finish : PublishSubject<Void> = PublishSubject()
     
     private let userService: UserService
     private let email: String
@@ -31,12 +32,9 @@ final class UserVerifyViewModel : ObservableObject {
     
     private var tokenValue = ""
     
-    private weak var delegate: UserVerifyViewModelDelegate?
-    
-    init(email: String, userService: UserService, delegate: UserVerifyViewModelDelegate?) {
+    init(email: String, userService: UserService) {
         self.email = email
         self.userService = userService
-        self.delegate = delegate
         initValues()
         setupObservers()
     }
@@ -75,7 +73,7 @@ final class UserVerifyViewModel : ObservableObject {
                     self.showLoading.onNext(false)
                     self.hasError.onNext(false)
                     self.errorMessage.onNext("")
-                    self.didFinishUserVerification()
+                    self.didFinishVerification()
                 }
             },
                        onError: { error in
@@ -87,7 +85,7 @@ final class UserVerifyViewModel : ObservableObject {
             .disposed(by: disposeBag)
     }
     
-    private func didFinishUserVerification() {
-        delegate?.didFinishUserVerification()
+    private func didFinishVerification() {
+        finish.onCompleted()
     }
 }

@@ -8,10 +8,6 @@
 import RxSwift
 import Foundation
 
-protocol UserRegistrationViewModelDelegate : class {
-    func didFinishUserRegistration(with email: String)
-}
-
 final class UserRegistrationViewModel {
     
     // UI will update these
@@ -23,8 +19,11 @@ final class UserRegistrationViewModel {
     var errorMessage : PublishSubject<String> = PublishSubject()
 
     var showLoading : PublishSubject<Bool> = PublishSubject()
+    var didFinishUserRegistration: Observable<Void> {
+        return finish.asObserver()
+    }
     
-    private weak var delegate: UserRegistrationViewModelDelegate?
+    private var finish : PublishSubject<Void> = PublishSubject()
     
     private let userService: UserService
     private let disposeBag = DisposeBag()
@@ -33,34 +32,30 @@ final class UserRegistrationViewModel {
     private var emailValue = ""
     private var passwordValue = ""
     
-    init(userService: UserService, delegate: UserRegistrationViewModelDelegate? = nil) {
+    init(userService: UserService) {
         self.userService = userService
-        self.delegate = delegate
         initValues()
         setupObservers()
     }
     
     func onRegisterButtonTap() {
         
-        if emailValue.isValidEmail {
+        let isValidEmail = emailValue.isValidEmail
+        let isValidPassword = passwordValue.isValidPassword
+        
+        if isValidEmail && isValidPassword {
             hasError.onNext(false)
             errorMessage.onNext("")
-        } else {
+            performUserRegistration()
+        }
+        else if (!isValidEmail) {
             hasError.onNext(true)
             errorMessage.onNext("Please enter a valid email address")
-            return
         }
-        
-        if passwordValue.isValidPassword {
-            hasError.onNext(false)
-            errorMessage.onNext("")
-        } else {
+        else {
             hasError.onNext(true)
             errorMessage.onNext("Password length must be at least 8 characters")
-            return
         }
-        
-        performUserRegistration()
     }
     private func setupObservers() {
         email.asObserver()
@@ -91,7 +86,7 @@ final class UserRegistrationViewModel {
                     self.showLoading.onNext(false)
                     self.hasError.onNext(false)
                     self.errorMessage.onNext("")
-                    self.didFinishUserRegistration()
+                    self.didFinish()
                 }
             },
                        onError: { error in
@@ -103,7 +98,7 @@ final class UserRegistrationViewModel {
         .disposed(by: disposeBag)
     }
     
-    private func didFinishUserRegistration() {
-        delegate?.didFinishUserRegistration(with: emailValue)
+    private func didFinish() {
+        finish.onCompleted()
     }
 }
