@@ -99,6 +99,6 @@ final class UserRegistrationViewModel {
     }
     
     private func didFinish() {
-        finish.onCompleted()
+        finish.onNext(Void())
     }
 }

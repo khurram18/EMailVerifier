@@ -58,9 +58,9 @@ extension AppStateNavigation {
         
         viewModel.didFinishUserRegistration
             .observeOn(MainScheduler.instance)
-            .subscribe(onNext: nil, onError: nil, onCompleted: {
+            .subscribe(onNext:{_ in
                 self.didFinishUserRegistration(with: email)
-            }, onDisposed: nil)
+            }, onError: nil, onCompleted: nil, onDisposed: nil)
             .disposed(by: disposeBag)
         
         userRegistrationViewController.viewModel = viewModel
@@ -73,9 +73,9 @@ extension AppStateNavigation {
         viewModel.didFinishUserVerification
             .asObservable()
             .observeOn(MainScheduler.instance)
-            .subscribe(onNext: nil, onError: nil, onCompleted: {
+            .subscribe(onNext: { _ in
                 self.didFinishUserVerification()
-            }, onDisposed: nil)
+            }, onError: nil, onCompleted: nil, onDisposed: nil)
             .disposed(by: disposeBag)
         
         viewController.viewModel = viewModel

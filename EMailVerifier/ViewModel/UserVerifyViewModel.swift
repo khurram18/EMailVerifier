@@ -87,6 +87,6 @@ final class UserVerifyViewModel : ObservableObject {
     }
     
     private func didFinishVerification() {
-        finish.onCompleted()
+        finish.onNext(Void())
     }
 }
