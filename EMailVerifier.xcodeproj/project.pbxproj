@@ -38,6 +38,7 @@
 		A1CAD8BB2387C1AB00BFF4C1 /* MockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CAD8BA2387C1AB00BFF4C1 /* MockService.swift */; };
 		A1CAD8BD2387C42300BFF4C1 /* UserRegistrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CAD8BC2387C42300BFF4C1 /* UserRegistrationTests.swift */; };
 		A1CAD8BF2387CC8900BFF4C1 /* AppStateNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CAD8BE2387CC8900BFF4C1 /* AppStateNavigation.swift */; };
+		A1CAD8C12387F0C200BFF4C1 /* UserVerificationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CAD8C02387F0C200BFF4C1 /* UserVerificationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +93,7 @@
 		A1CAD8BA2387C1AB00BFF4C1 /* MockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockService.swift; sourceTree = "<group>"; };
 		A1CAD8BC2387C42300BFF4C1 /* UserRegistrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegistrationTests.swift; sourceTree = "<group>"; };
 		A1CAD8BE2387CC8900BFF4C1 /* AppStateNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStateNavigation.swift; sourceTree = "<group>"; };
+		A1CAD8C02387F0C200BFF4C1 /* UserVerificationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserVerificationTests.swift; sourceTree = "<group>"; };
 		A440EFFD24E7E3106A4A2FED /* Pods-EMailVerifierTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EMailVerifierTests.release.xcconfig"; path = "Target Support Files/Pods-EMailVerifierTests/Pods-EMailVerifierTests.release.xcconfig"; sourceTree = "<group>"; };
 		ACF6824C98FE3A95D0BF09AF /* Pods-EMailVerifier.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EMailVerifier.release.xcconfig"; path = "Target Support Files/Pods-EMailVerifier/Pods-EMailVerifier.release.xcconfig"; sourceTree = "<group>"; };
 		CCDC2B95F995595F2E095380 /* Pods_EMailVerifierTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EMailVerifierTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -170,6 +172,7 @@
 				A166BC0A2386814F00DF3046 /* Info.plist */,
 				A1CAD8BA2387C1AB00BFF4C1 /* MockService.swift */,
 				A1CAD8BC2387C42300BFF4C1 /* UserRegistrationTests.swift */,
+				A1CAD8C02387F0C200BFF4C1 /* UserVerificationTests.swift */,
 			);
 			path = EMailVerifierTests;
 			sourceTree = "<group>";
@@ -551,6 +554,7 @@
 				A122E477238721A40095880D /* GraphQLError.swift in Sources */,
 				A166BC092386814F00DF3046 /* EMailVerifierTests.swift in Sources */,
 				A1A974A52386B241007EDDC5 /* String.swift in Sources */,
+				A1CAD8C12387F0C200BFF4C1 /* UserVerificationTests.swift in Sources */,
 				A1A974962386936C007EDDC5 /* UserService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
