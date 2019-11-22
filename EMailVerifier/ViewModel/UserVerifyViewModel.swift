@@ -11,7 +11,7 @@ import Foundation
 
 final class UserVerifyViewModel : ObservableObject {
 
-    // UI will update these
+    // UI will update this
     var token : PublishSubject<String> = PublishSubject()
     
     // UI will subscribe to these

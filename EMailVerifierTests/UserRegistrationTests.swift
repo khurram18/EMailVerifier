@@ -15,17 +15,13 @@ class UserRegistrationTests: XCTestCase {
     private var userRegistrationViewModel: UserRegistrationViewModel?
     private let disposeBag = DisposeBag()
     
-    let email = "abc@xyz.com"
-    let password = "qwer1234"
-    let token = "xyz"
+    private let email = "abc@xyz.com"
+    private let password = "qwer1234"
+    private let token = "xyz"
     
     override func setUp() {
         let mockService = MockService(email: email, password: password, token: token)
         userRegistrationViewModel = UserRegistrationViewModel(userService: mockService)
-    }
-
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
     func testUserRegistrationEmptyEmail() {
@@ -162,12 +158,4 @@ class UserRegistrationTests: XCTestCase {
         userRegistrationViewModel?.onRegisterButtonTap()
         waitForExpectations(timeout: 1, handler: nil)
     }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
 }
