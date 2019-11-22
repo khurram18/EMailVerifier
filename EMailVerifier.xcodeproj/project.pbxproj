@@ -20,7 +20,6 @@
 		A166BBF92386814E00DF3046 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A166BBF72386814E00DF3046 /* Main.storyboard */; };
 		A166BBFB2386814F00DF3046 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A166BBFA2386814F00DF3046 /* Assets.xcassets */; };
 		A166BBFE2386814F00DF3046 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A166BBFC2386814F00DF3046 /* LaunchScreen.storyboard */; };
-		A166BC092386814F00DF3046 /* EMailVerifierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A166BC082386814F00DF3046 /* EMailVerifierTests.swift */; };
 		A166BC142386814F00DF3046 /* EMailVerifierUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A166BC132386814F00DF3046 /* EMailVerifierUITests.swift */; };
 		A1A97492238692D9007EDDC5 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A97491238692D9007EDDC5 /* API.swift */; };
 		A1A974952386936C007EDDC5 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A974942386936C007EDDC5 /* UserService.swift */; };
@@ -77,7 +76,6 @@
 		A166BBFD2386814F00DF3046 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A166BBFF2386814F00DF3046 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A166BC042386814F00DF3046 /* EMailVerifierTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EMailVerifierTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A166BC082386814F00DF3046 /* EMailVerifierTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EMailVerifierTests.swift; sourceTree = "<group>"; };
 		A166BC0A2386814F00DF3046 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A166BC0F2386814F00DF3046 /* EMailVerifierUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EMailVerifierUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A166BC132386814F00DF3046 /* EMailVerifierUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EMailVerifierUITests.swift; sourceTree = "<group>"; };
@@ -167,7 +165,6 @@
 		A166BC072386814F00DF3046 /* EMailVerifierTests */ = {
 			isa = PBXGroup;
 			children = (
-				A166BC082386814F00DF3046 /* EMailVerifierTests.swift */,
 				A1CAD8B82387C11D00BFF4C1 /* Expectation.swift */,
 				A166BC0A2386814F00DF3046 /* Info.plist */,
 				A1CAD8BA2387C1AB00BFF4C1 /* MockService.swift */,
@@ -552,7 +549,6 @@
 				A1A974A22386B16F007EDDC5 /* UserVerifyViewController.swift in Sources */,
 				A1A9749C2386A12E007EDDC5 /* UserRegistrationViewModel.swift in Sources */,
 				A122E477238721A40095880D /* GraphQLError.swift in Sources */,
-				A166BC092386814F00DF3046 /* EMailVerifierTests.swift in Sources */,
 				A1A974A52386B241007EDDC5 /* String.swift in Sources */,
 				A1CAD8C12387F0C200BFF4C1 /* UserVerificationTests.swift in Sources */,
 				A1A974962386936C007EDDC5 /* UserService.swift in Sources */,
