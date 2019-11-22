@@ -33,7 +33,7 @@ class UserRegistrationTests: XCTestCase {
         let expectation = defaultExpectation()
         
         userRegistrationViewModel?.hasError
-            .asObserver()
+            .asObservable()
             .observeOn(MainScheduler.instance)
             .subscribe(onNext: { value in
                 if value {
@@ -52,7 +52,7 @@ class UserRegistrationTests: XCTestCase {
         let expectation = defaultExpectation()
         
         userRegistrationViewModel?.hasError
-            .asObserver()
+            .asObservable()
             .observeOn(MainScheduler.instance)
             .subscribe(onNext: { value in
                 if value {
@@ -71,7 +71,7 @@ class UserRegistrationTests: XCTestCase {
         let expectation = defaultExpectation()
         
         userRegistrationViewModel?.hasError
-            .asObserver()
+            .asObservable()
             .observeOn(MainScheduler.instance)
             .subscribe(onNext: { value in
                 if value {
@@ -90,7 +90,7 @@ class UserRegistrationTests: XCTestCase {
         let expectation = defaultExpectation()
         
         userRegistrationViewModel?.hasError
-            .asObserver()
+            .asObservable()
             .observeOn(MainScheduler.instance)
             .subscribe(onNext: { value in
                 if value {
@@ -109,7 +109,7 @@ class UserRegistrationTests: XCTestCase {
         let expectation = defaultExpectation()
         
         userRegistrationViewModel?.hasError
-            .asObserver()
+            .asObservable()
             .observeOn(MainScheduler.instance)
             .subscribe(onNext: { value in
                 if value == false {
@@ -126,18 +126,17 @@ class UserRegistrationTests: XCTestCase {
     }
     
     func testUserRegistrationCorrectResponse() {
-        
+
         let expectation = defaultExpectation()
-        
+
         userRegistrationViewModel?.didFinishUserRegistration
             .asObservable()
             .observeOn(MainScheduler.init())
             .subscribe(onNext: nil, onError: nil, onCompleted: {
-                print("\(expectation.expectationDescription)")
                 expectation.fulfill()
             }, onDisposed: nil)
             .disposed(by: disposeBag)
-        
+
         userRegistrationViewModel?.email.onNext(email)
         userRegistrationViewModel?.password.onNext(password)
         userRegistrationViewModel?.onRegisterButtonTap()
@@ -149,7 +148,7 @@ class UserRegistrationTests: XCTestCase {
         let expectation = defaultExpectation()
         
         userRegistrationViewModel?.hasError
-            .asObserver()
+            .asObservable()
             .observeOn(MainScheduler.instance)
             .subscribe(onNext: { value in
                 if value == false {
