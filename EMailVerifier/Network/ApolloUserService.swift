@@ -58,7 +58,12 @@ extension ApolloUserService: UserService {
                         return
                     }
                     guard data.userVerifyEmail.status == .success else {
-                        observer.onError(GraphQLError(message: data.userVerifyEmail.message ?? "An error occurred"))
+                        var message = data.userVerifyEmail.message ?? "An error occurred"
+                        // FIXME: There is bug in backend that returns empty message in case of failure
+                        if message.isEmpty {
+                            message = "An error occurred"
+                        }
+                        observer.onError(GraphQLError(message: message))
                         return
                     }
                     observer.onNext(true)
