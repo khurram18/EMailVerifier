@@ -95,7 +95,7 @@ final class UserRegistrationViewModel {
                         let message = (error as? GraphQLError)?.message ?? "An error occurred"
                         self.errorMessage.onNext(message)
             })
-        .disposed(by: disposeBag)
+            .disposed(by: disposeBag)
     }
     
     private func didFinish() {
