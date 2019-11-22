@@ -82,6 +82,8 @@ extension AppStateNavigation {
     }
     
     private func didFinishUserVerification() {
-        navigationController?.pushViewController(UIStoryboard.main.instantiateUserVerifiedViewController(), animated: true)
+        let viewController = UIStoryboard.main.instantiateUserVerifiedViewController()
+        viewController.title = "Account Verified"
+        navigationController?.pushViewController(viewController, animated: true)
     }
 }

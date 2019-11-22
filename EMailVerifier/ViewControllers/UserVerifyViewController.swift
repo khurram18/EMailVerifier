@@ -23,6 +23,7 @@ class UserVerifyViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "User Verification"
         setupBindings()
         setupObservers()
     }

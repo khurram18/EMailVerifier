@@ -26,6 +26,7 @@ class UserRegistrationViewController: UIViewController {
         // Do any additional setup after loading the view.
         setupBindings()
         setupObservers()
+        title = "User Registration"
         
         // Since we are in dev mode we do not need content type. For a production app we will have to use the cotent type
         // to .newPassword or .password
