@@ -41,11 +41,17 @@
                                             <constraint firstAttribute="height" constant="34" id="QfW-eZ-0oV"/>
                                             <constraint firstAttribute="width" constant="34" id="qiw-OB-JMW"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="image"/>
+                                        </userDefinedRuntimeAttributes>
                                     </imageView>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fCD-Ta-vl0">
                                         <rect key="frame" x="42" y="0.0" width="332" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="next" textContentType="email"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="textField"/>
+                                        </userDefinedRuntimeAttributes>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -109,6 +115,9 @@
                                 <state key="normal" title="Register">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="button"/>
+                                </userDefinedRuntimeAttributes>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -150,6 +159,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TVB-dU-YYw">
+                                <rect key="frame" x="20" y="263" width="374" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="cih-NO-iJB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="descriptionLabel"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z7I-Xp-j4P">
                                 <rect key="frame" x="20" y="332" width="374" height="34"/>
                                 <subviews>
@@ -160,11 +181,17 @@
                                             <constraint firstAttribute="width" constant="34" id="IHp-g6-pIA"/>
                                             <constraint firstAttribute="height" constant="39.5" id="RVA-Wq-JMY"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="image"/>
+                                        </userDefinedRuntimeAttributes>
                                     </imageView>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Token" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="teD-cY-mkg">
                                         <rect key="frame" x="42" y="0.0" width="332" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="textField"/>
+                                        </userDefinedRuntimeAttributes>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -201,6 +228,9 @@
                                 <state key="normal" title="Verify">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="button"/>
+                                </userDefinedRuntimeAttributes>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -209,9 +239,13 @@
                             <constraint firstItem="XCc-NG-Npj" firstAttribute="centerY" secondItem="sa5-ta-ECH" secondAttribute="centerY" id="6ai-4J-wJG"/>
                             <constraint firstItem="XCc-NG-Npj" firstAttribute="top" secondItem="uZN-Oy-t2W" secondAttribute="bottom" constant="8" id="6yP-dJ-z39"/>
                             <constraint firstItem="XCc-NG-Npj" firstAttribute="top" secondItem="z7I-Xp-j4P" secondAttribute="bottom" constant="72" id="9s4-8I-XIa"/>
+                            <constraint firstItem="z7I-Xp-j4P" firstAttribute="top" secondItem="TVB-dU-YYw" secondAttribute="bottom" constant="8" id="DE8-gi-eoP"/>
                             <constraint firstItem="XCc-NG-Npj" firstAttribute="centerX" secondItem="sa5-ta-ECH" secondAttribute="centerX" id="VRc-0e-3yg"/>
                             <constraint firstItem="uZN-Oy-t2W" firstAttribute="top" secondItem="86o-TI-OKl" secondAttribute="bottom" constant="8" id="Yui-Vb-Mht"/>
                             <constraint firstItem="86o-TI-OKl" firstAttribute="centerX" secondItem="uZN-Oy-t2W" secondAttribute="centerX" id="cF0-kB-NU3"/>
+                            <constraint firstItem="TVB-dU-YYw" firstAttribute="centerX" secondItem="sa5-ta-ECH" secondAttribute="centerX" id="gxQ-LG-Yky"/>
+                            <constraint firstItem="sa5-ta-ECH" firstAttribute="trailing" secondItem="TVB-dU-YYw" secondAttribute="trailing" constant="20" id="hcv-0y-02q"/>
+                            <constraint firstItem="TVB-dU-YYw" firstAttribute="leading" secondItem="sa5-ta-ECH" secondAttribute="leading" constant="20" id="lMs-Yd-tOV"/>
                             <constraint firstItem="sa5-ta-ECH" firstAttribute="trailing" secondItem="z7I-Xp-j4P" secondAttribute="trailing" constant="20" id="p3e-6A-gaS"/>
                             <constraint firstItem="uZN-Oy-t2W" firstAttribute="centerX" secondItem="sa5-ta-ECH" secondAttribute="centerX" id="yGW-9S-Uan"/>
                         </constraints>
@@ -219,6 +253,7 @@
                     </view>
                     <connections>
                         <outlet property="activityIndicator" destination="uZN-Oy-t2W" id="JzU-0n-EXG"/>
+                        <outlet property="confirmationLabel" destination="TVB-dU-YYw" id="WSk-Ad-Ol5"/>
                         <outlet property="errorLabel" destination="86o-TI-OKl" id="NXd-16-nke"/>
                         <outlet property="tokenTextField" destination="teD-cY-mkg" id="TgU-T8-23R"/>
                         <outlet property="verifyButton" destination="XCc-NG-Npj" id="JOo-dm-Voa"/>
@@ -226,7 +261,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1NY-F4-zdS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138" y="804"/>
+            <point key="canvasLocation" x="137.68115942028987" y="803.57142857142856"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="vMJ-r6-fuV">
@@ -241,6 +276,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="descriptionLabel"/>
+                                </userDefinedRuntimeAttributes>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>

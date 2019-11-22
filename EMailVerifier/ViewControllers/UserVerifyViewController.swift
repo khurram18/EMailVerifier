@@ -5,6 +5,7 @@
 //  Created by Khurram Shehzad on 21/11/2019.
 //
 
+import Hero
 import RxCocoa
 import RxSwift
 
@@ -18,12 +19,15 @@ class UserVerifyViewController: UIViewController {
     @IBOutlet weak var errorLabel: UILabel!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var verifyButton: UIButton!
+    @IBOutlet weak var confirmationLabel: UILabel!
     
     private let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "User Verification"
+        confirmationLabel.text = "A confirmation email has been sent to \(viewModel?.email ?? "your email") that contains a token. Please write that token below"
+        hero.isEnabled = true
         setupBindings()
         setupObservers()
     }

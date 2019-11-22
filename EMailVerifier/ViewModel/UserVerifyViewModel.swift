@@ -11,6 +11,8 @@ import Foundation
 
 final class UserVerifyViewModel : ObservableObject {
 
+    let email: String
+    
     // UI will update this
     var token : PublishSubject<String> = PublishSubject()
     
@@ -26,7 +28,6 @@ final class UserVerifyViewModel : ObservableObject {
     private var finish : PublishSubject<Void> = PublishSubject()
     
     private let userService: UserService
-    private let email: String
     private let disposeBag = DisposeBag()
     private let throttleIntervalInMilliseconds = 500
     

@@ -28,7 +28,8 @@ final class AppStateNavigation: NSObject {
             let viewController = navigationConntroller.viewControllers.first as? UserRegistrationViewController else { return }
         
         navigationConntroller.delegate = self
-        
+        navigationController?.hero.isEnabled = true
+        navigationController?.hero.navigationAnimationType = .fade
         configure(userRegistrationViewController: viewController)
     }
 }
@@ -84,6 +85,7 @@ extension AppStateNavigation {
     private func didFinishUserVerification() {
         let viewController = UIStoryboard.main.instantiateUserVerifiedViewController()
         viewController.title = "Account Verified"
+        viewController.hero.isEnabled = true
         navigationController?.pushViewController(viewController, animated: true)
     }
 }
